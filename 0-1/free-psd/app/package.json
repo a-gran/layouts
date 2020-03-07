@@ -1,0 +1,23 @@
+{
+  "name": "free-psd",
+  "version": "1.0.0",
+  "description": "layout",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awebdeff/free-psd.git"
+  },
+  "keywords": [
+    "html",
+    "css"
+  ],
+  "author": "alexey shramko <awebdeff@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/awebdeff/free-psd/issues"
+  },
+  "homepage": "https://github.com/awebdeff/free-psd#readme"
+}
