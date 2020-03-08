@@ -2,7 +2,7 @@
   "name": "sweet-alert",
   "version": "1.0.0",
   "description": "sweet-alert html css js",
-  "main": "index.html",
+  "main": "index.js",
   "repository": "https://github.com/awebdeff/layouts.git",
   "author": "ash <awebdeff@gmail.com>",
   "license": "MIT",
