@@ -27,9 +27,7 @@ body {
   color: #5e5e5e;
 }
 
-header,
-.slider__btn,
-.slider__title {
+header, .slider__btn, .slider__title {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -167,7 +165,7 @@ header,
   display: inline-block;
   font-size: 14px;
   line-height: 24px;
-  color: #fff;  
+  color: #fff;
   font-weight: 500;
   padding: 8px 30px 8px 24px;
   border: 1px solid #ffc222;
@@ -194,8 +192,8 @@ header,
   top: 70%;
   z-index: 3;
   width: 40px;
-  height: 40px;  
-  border: 1px solid #fff; 
+  height: 40px;
+  border: 1px solid #fff;
   cursor: pointer;
   outline: none;
   background-color: #ffc222;
@@ -231,23 +229,23 @@ header,
   left: 0;
 }
 
-.about {
+.services {
   padding: 50px 0px 30px;
 }
 
-.about__top {
+.services__top {
   display: flex;
   justify-content: space-between;
   margin-bottom: 60px;
 }
 
-.about__title-box {
+.services__title-box, .form__title-box {
   max-width: 520px;
   padding-left: 140px;
   position: relative;
 }
 
-.about__title-box:before {
+.services__title-box:before, .form__title-box:before {
   content: "";
   position: absolute;
   width: 100px;
@@ -257,7 +255,7 @@ header,
   top: 11px
 }
 
-.about-title {
+.services__title, .form__title {
   font-size: 24px;
   font-weight: 500;
   line-height: 24px;
@@ -266,11 +264,11 @@ header,
   margin-bottom: 10px;
 }
 
-.about-text {
+.services__text, .form__text {
   letter-spacing: 0.1px;
 }
 
-.about__btn a {
+.services__btn a {
   color: #373636;
   line-height: 24px;
   letter-spacing: 0.25px;
@@ -278,13 +276,12 @@ header,
   border: 3px solid #e6e6e6;
 }
 
-.about__items {
+.services__items {
   display: flex;
   justify-content: space-between;
-
 }
 
-.about__item {
+.services__item {
   max-width: 360px;
   text-align: center;
   padding: 30px 0px 80px;
@@ -294,7 +291,7 @@ header,
   box-shadow: 0px 7px 24.3px 2.7px rgba(91, 89, 89, 0.14);
 }
 
-.about__item-title {
+.services__item-title {
   color: #212020;
   font-size: 18px;
   line-height: 24px;
@@ -303,32 +300,201 @@ header,
   padding: 24px 0;
 }
 
-.about__item-text {
+.services__item-text {
   letter-spacing: 0.1px;
   padding: 0 35px;
   padding: 0px 30px 30px;
 }
 
-.about__item-btn {
+.services__item-btn {
   position: absolute;
   bottom: 40px;
   left: 0;
   right: 0;
 }
 
-.about__item-btn .default-btn {
-  color: #373636 
+.services__item-btn .default-btn {
+  color: #373636
 }
 
-.about__item-btn .default-btn:after {
-  color: #fff 
+.services__item-btn .default-btn:after {
+  color: #fff
 }
 
-.about__item-link {
+.services__item-link {
   color: #050505;
   font-family: 'Roboto', sans-serif;
   border-bottom: 1px solid #050505;
   margin-right: 60px;
 }
 
+.about {
+  background-image: url(../img/about-fon.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
+  background-repeat: no-repeat;
+  padding: 25px 0px 45px;
+}
 
+.about__inner {
+  max-width: 545px;
+}
+
+.about__title {
+  padding: 10px 0px 25px;
+  font-size: 24px;
+  line-height: 24px;
+  color: #fff;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+
+.about__text {
+  margin-bottom: 30px;
+  letter-spacing: 0.1px;
+  line-height: 24px;
+  color: #d3d2d2;
+}
+
+.about__btn.default-btn:after {
+  color: #000;
+}
+
+.form {
+  padding-top: 30px;
+}
+
+.form__inner {
+  padding-bottom: 40px;
+  background-image: url(../img/form-fon.png);
+  background-repeat: no-repeat;
+  min-height: 460px;
+  background-position: bottom right;
+}
+
+.form__box {
+  max-width: 850px;
+  padding-top: 45px;
+}
+
+.form__box-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__box-left {
+  max-width: 260px;
+  width: 100%;
+}
+
+.form__box-right {
+  max-width: 555px;
+  width: 100%;
+}
+
+.form__box-inner label, .form__box-inner input, .form__box-inner textarea {
+  display: block;
+  width: 100%;
+}
+
+.form__box-inner label {
+  line-height: 36px;
+  color: #282828;
+  font-family: 'Roboto', sans-serif;
+}
+
+.form__box-inner input {
+  margin-bottom: 8px;
+  outline: none;
+  height: 40px;
+  border: 1px solid #e6e6e6;
+  padding: 0px 10px;
+}
+
+.form__box-inner select {
+  outline: none;
+  padding-left: 17px;
+}
+
+.form__box-inner .jq-selectbox.jqselect {
+  display: block;
+  width: 100%;
+}
+
+.form__box-inner .jq-selectbox__select {
+  height: 40px;
+  border: 1px solid #e6e6e6;
+  padding-left: 17px;
+}
+
+.form__box-inner .jq-selectbox__trigger-arrow:before {
+  content: "\f105";
+  font-family: 'icomoon';
+  position: absolute;
+  right: 17px;
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.form__box-inner .jq-selectbox__dropdown {
+  width: 100%;
+  margin: 2px 0 0;
+  padding: 0;
+  border: 1px solid #e6e6e6;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+}
+
+.form__box-inner .jq-selectbox li {
+  min-height: 18px;
+  padding: 5px 17px 6px;
+  color: #231f20;
+}
+
+.form__box-inner .jq-selectbox li.selected {
+  background-color: #A3ABB1;
+  color: #FFF;
+}
+
+.form__box-inner .jq-selectbox li:hover {
+  background-color: #08C;
+  color: #FFF;
+}
+
+.form__box-inner .jq-selectbox li.disabled {
+  color: #AAA;
+}
+
+.form__box-inner .jq-selectbox li.disabled:hover {
+  background: none;
+}
+
+.form__box-inner .jq-selectbox li.optgroup {
+  font-weight: bold;
+}
+
+.form__box-inner .jq-selectbox li.optgroup:hover {
+  background: none;
+  color: #231F20;
+  cursor: default;
+}
+
+.form__box-inner .jq-selectbox li.option {
+  padding-left: 25px;
+}
+
+.form__box-inner textarea {
+  outline: none;
+  border: 1px solid #e6e6e6;
+  padding: 10px;
+  height: 208px;
+  resize: none;
+  margin-bottom: 40px;
+}
+
+.form__box-inner button {
+  background-color: transparent;
+  color: #282828;
+  float: right;
+}
