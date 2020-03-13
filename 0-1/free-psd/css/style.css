@@ -791,3 +791,8 @@ header,
   cursor: pointer;
 }
 
+.header__btn-menu {
+  display: none;
+  float: right;
+  font-size: 28px;
+}
